@@ -1,0 +1,2 @@
+# react-native-tizen-dotnet
+React Native is an open source framework for building native apps with React.JS. It is supported in Android, iOS and Windows currently. And react-native-tizen-dotnet is a React Native framework for developer to build Tizen.NET apps on Tizen. It provides the same fundamental UI components and user experience with Tizen native Apps. Also it provides a easy and fast debugging way with Hot Module Reloading feature.
