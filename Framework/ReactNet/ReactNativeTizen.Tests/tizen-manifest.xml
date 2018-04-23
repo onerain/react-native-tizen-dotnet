@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.tizen.example.ReactNativeTizen.Tests" version="1.0.0">
+  <profile name="tv" />
+  <ui-application appid="org.tizen.example.ReactNativeTizen.Tests"
+					exec="ReactNativeTizen.Tests.exe"
+					type="dotnet"
+					multiple="false"
+					taskmanage="true"
+					nodisplay="false"
+					launch_mode="single">
+    <icon>ReactNativeTizen.Tests.png</icon>
+    <label>ReactNativeTizen.Tests</label>
+  </ui-application>
+</manifest>
