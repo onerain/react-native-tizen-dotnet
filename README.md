@@ -18,8 +18,8 @@ react-native-tizen-dotnet
 ├── Devtools/ - Development tool .
 ├── Docs/ - Components & APIs Documents.
 ├── Example/ - Example of react-native-tizen-dotnet App.
-├── Framework/ - react-native-tizen-dotnet Framework.
-    └── react-native-tizen/ - JS Library.
+└── Framework/ - react-native-tizen-dotnet Framework.
+    ├── react-native-tizen/ - JS Library.
     └── ReactNet/ - Native Framework based on .NET Code.
 ```
 
