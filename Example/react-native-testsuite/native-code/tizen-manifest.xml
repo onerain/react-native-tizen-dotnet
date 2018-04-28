@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.tizen.react_native_testsuite" version="1.0.0" api-version="3.0" xmlns="http://tizen.org/ns/packages">
+  <profile name="common" />
+  <ui-application appid="org.tizen.react_native_testsuite" exec="react_native_testsuite.Tizen.exe" multiple="false" nodisplay="false" taskmanage="true" splash-screen-display="true" type="dotnet" launch_mode="single">
+    <label>react_native_testsuite.Tizen</label>
+    <icon>react_native_testsuite.Tizen.png</icon>
+  </ui-application>
+  <shortcut-list />
+  <privileges>
+    <privilege>http://tizen.org/privilege/network.get</privilege>
+    <privilege>http://tizen.org/privilege/network.set</privilege>
+    <privilege>http://tizen.org/privilege/network.profile</privilege>
+  </privileges>
+</manifest>
