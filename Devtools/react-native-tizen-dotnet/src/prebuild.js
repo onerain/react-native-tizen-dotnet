@@ -2,9 +2,10 @@
 import fse from 'fs-extra';
 import path from 'path';
 
-export function getPath () {
+export function getPath() {
     let dir = __dirname;
-    let endIndex = dir.indexOf('/node_modules/react-native-sante/build');
+    const name = require('../package.json').name;
+    let endIndex = dir.indexOf(`/node_modules/${name}/build`);
     return dir.slice(0, endIndex);
 }
 export async function preBuild() {

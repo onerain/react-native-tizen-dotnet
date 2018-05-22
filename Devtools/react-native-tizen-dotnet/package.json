@@ -1,6 +1,6 @@
 {
     "name": "react-native-tizen-dotnet",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "react-native-tizen-dotnet is a React Native framework for developer to build Tizen.NET apps on Tizen.",
     "main": "Libraries/react-native-tizen/react-native-tizen.js",
     "scripts": {
@@ -17,9 +17,13 @@
         "react",
         ".NET Core"
     ],
+    "homepage": "https://github.com/Samsung/react-native-tizen-dotnet",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/Samsung/react-native-tizen-dotnet.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Samsung/react-native-tizen-dotnet/issues"
     },
     "engines": {
         "node": ">= 4.0.0"
@@ -30,7 +34,7 @@
         "README.md"
     ],
     "bin": {
-        "react-native-sante": "./build/bin/react-native-tizen-scripts.js"
+        "react-native-tizen": "./build/bin/react-native-tizen-scripts.js"
     },
     "peerDependencies": {
         "react-native": ">=0.31.0"
