@@ -4,3 +4,10 @@ yarn-error.log
 *.tgz
 .DS_Store
 *.log
+
+
+# VS
+.vs
+bin
+obj
+UpgradeLog.htm
