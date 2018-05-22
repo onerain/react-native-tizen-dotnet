@@ -7,10 +7,11 @@ import pathExists from 'path-exists';
 import spawn from 'cross-spawn';
 import log from './util/log';
 
+const version = require('../../react-native-tizen-dotnet/package.json')
 const DEFAULT_DEPENDENCIES = {
     react: '15.4.2',
     'react-native': '0.42.3',
-    'react-native-tizen-dotnet': '>=0.1.0',
+    'react-native-tizen-dotnet': '>=0.1.1',
     //for debug
     //'react-native-tizen': 'file:/Users/admin/Documents/reactDotNative/Github/rn-tizen-netcore-app/react-native-tizen/',
 };
@@ -157,7 +158,7 @@ ${chalk.yellow('You had a `README.md` file, we renamed it to `README.old.md`')}`
             );
         }
 
-        log('Start Prepare Sante Project....');        
+        log('Start Prepare Tizen dotnet Project....');
 
         let tempArray = [
             appPath + '/Tizen/tizen-manifest.xml',
