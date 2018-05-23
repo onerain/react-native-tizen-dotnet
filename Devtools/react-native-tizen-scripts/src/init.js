@@ -7,7 +7,6 @@ import pathExists from 'path-exists';
 import spawn from 'cross-spawn';
 import log from './util/log';
 
-const version = require('../../react-native-tizen-dotnet/package.json')
 const DEFAULT_DEPENDENCIES = {
     react: '15.4.2',
     'react-native': '0.42.3',

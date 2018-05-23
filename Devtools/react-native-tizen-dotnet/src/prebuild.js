@@ -4,8 +4,7 @@ import path from 'path';
 
 export function getPath() {
     let dir = __dirname;
-    const name = require('../package.json').name;
-    let endIndex = dir.indexOf(`/node_modules/${name}/build`);
+    let endIndex = dir.indexOf(`/node_modules/react-native-tizen-dotnet/build`);
     return dir.slice(0, endIndex);
 }
 export async function preBuild() {
