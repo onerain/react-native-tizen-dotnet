@@ -3,9 +3,9 @@ import fse from 'fs-extra';
 import spawn from 'cross-spawn';
 import crypto from 'crypto';
 import minimist from 'minimist';
-import { exec,  execSync} from 'child_process';
+import { exec, execSync } from 'child_process';
 
-import {preBuild} from './prebuild';
+import { preBuild } from './prebuild';
 
 const argv = minimist(process.argv.slice(2));
 
@@ -20,7 +20,7 @@ async function packagerBuild() {
     console.log(`[packagerBuild] appPath: ${appPath}`);
 
     //check tizen.dll hash
-    checkHash(fse.readFileSync(appPath+'/Tizen/ReactNativeTizen.dll'));
+    checkHash(fse.readFileSync(path.normalize(`${appPath}/Tizen/ReactNativeTizen.dll`)));
 
     function checkHash(data) {
         let sha1 = crypto.createHash('sha1');
@@ -31,10 +31,10 @@ async function packagerBuild() {
     }
 
     function checkCommand(cmd) {
-        if(!cmd) {
+        if (!cmd) {
             return false;
         }
-        if(cmd.toLowerCase() === 'release') {
+        if (cmd.toLowerCase() === 'release') {
             return true;
         }
         return false;
@@ -44,17 +44,9 @@ async function packagerBuild() {
 
     //dotnet build
     const SPACE = ' ';
-    execSync('dotnet restore '+SPACE+appPath +'/Tizen/', {stdio:[0,1,2]});
+    execSync('dotnet restore ' + SPACE + path.normalize(`${appPath}/Tizen/`), { stdio: [0, 1, 2] });
 
-    execSync('dotnet build -c ' + mode + SPACE+appPath +'/Tizen/', {stdio:[0,1,2]});
+    execSync('dotnet build -c ' + mode + SPACE + path.normalize(`${appPath}/Tizen/`), { stdio: [0, 1, 2] });
 
 };
 packagerBuild();
-
-
-
-
-
-
-
-
