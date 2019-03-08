@@ -36,6 +36,8 @@
   <ItemGroup>
     <None Remove="shared\res\index.tizen.bundle" />
     <None Remove="shared\res\icon.png" />
+    <None Remove="lib\libJSCore.so" />
+    <None Remove="lib\libyoga.so" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="shared\res\index.tizen.bundle">
