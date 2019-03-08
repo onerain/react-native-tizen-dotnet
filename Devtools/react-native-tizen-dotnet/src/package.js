@@ -3,6 +3,7 @@ import fse from 'fs-extra';
 import spawn from 'cross-spawn';
 import crypto from 'crypto';
 import minimist from 'minimist';
+import path from 'path';
 import { exec, execSync } from 'child_process';
 
 import { preBuild } from './prebuild';
