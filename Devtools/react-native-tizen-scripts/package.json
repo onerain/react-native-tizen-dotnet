@@ -1,6 +1,6 @@
 {
     "name": "react-native-tizen-scripts",
-    "version": "0.1.4",
+    "version": "0.1.6",
     "description": "create react-native-tizen-dotnet app with template files.",
     "author": "feng.zhao@samsung.com",
     "license": "MIT",
