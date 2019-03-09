@@ -1,6 +1,6 @@
 // @flow
 import minimist from 'minimist';
-import { launchTarget } from 'tv-dev-cli-sdk';
+import { launchTarget } from 'tizen-tv-dev-cli';
 import path from 'path';
 
 const argv = minimist(process.argv.slice(2));
