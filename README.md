@@ -37,7 +37,7 @@ react-native-tizen-dotnet
 -   $ ```yarn launch``` // launch tpk to Tizen TV , Before launch you need run shell on tizen board
 
 ## Connect to TV
-Refer to this website, **Enable Developer Mode on the TV**:
+Refer to this website, **Enable Developer Mode on the TV**:  
 https://developer.samsung.com/tv/develop/getting-started/using-sdk/tv-device
 
 
