@@ -36,16 +36,8 @@ react-native-tizen-dotnet
 -   $ ```yarn package``` // packaging tpk for Tizen
 -   $ ```yarn launch``` // launch tpk to Tizen TV , Before launch you need run shell on tizen board
 
-````shell
-sdb root on 
-sdb shell  
+## Connect to TV
+Refer to this website, **Enable Developer Mode on the TV**:
+https://developer.samsung.com/tv/develop/getting-started/using-sdk/tv-device
 
-vconftool set -t int db/sdk/develop/mode 1 -f 
-vconftool set -t string db/sdk/develop/ip 192.168.120.100(your dev ip) -f 
-````
-
-
-## Issue
-
-Currently Dev tool isn't submitted to npm server, so third-party can't easily develop react-native-tizen-dotnet APP.
 
