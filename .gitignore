@@ -11,3 +11,6 @@ yarn-error.log
 bin
 obj
 UpgradeLog.htm
+
+# but not these files
+!Devtools/react-native-tizen-dotnet/src/bin
