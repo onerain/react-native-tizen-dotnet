@@ -9,8 +9,7 @@ yarn-error.log
 # VS
 .vs
 bin
+!Devtools/react-native-tizen-dotnet/src/bin/react-native-tizen-scripts.js
 obj
 UpgradeLog.htm
 
-# but not these files
-!Devtools/react-native-tizen-dotnet/src/bin
